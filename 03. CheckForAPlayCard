@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _03.CheckForAPlayCard
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string input = Console.ReadLine();
+            input = input.ToUpper();
+            if (input == "J" || input == "K" || input == "Q" || input == "A")
+                {
+                    Console.WriteLine("yes");
+                }
+            else if (input == "2" || input == "3" || input == "4" || input == "5" || input == "6" || input == "7" || input == "8" || 
+                input == "9" || input == "10")
+            {
+                Console.WriteLine("yes");
+            }
+            else Console.WriteLine("wrong input");
+        }
+    }
+}
