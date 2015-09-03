@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _04.MultiplicationSign
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int numberOne = int.Parse(Console.ReadLine());
+            int numberTwo = int.Parse(Console.ReadLine());
+            int numberThree = int.Parse(Console.ReadLine());
+
+            if (numberOne * numberTwo * numberThree == 0)
+            {
+                Console.WriteLine("0");
+            }
+            else if (numberOne * numberTwo * numberThree > 0) 
+            {
+                Console.WriteLine("+");
+            }
+            else if (numberOne < 0 && numberTwo > 0 && numberThree > 0 || numberOne > 0 && numberTwo < 0 && numberThree > 0
+                || numberOne > 0 && numberTwo > 0 && numberThree < 0 || numberOne < 0 && numberTwo < 0 && numberThree < 0)
+            {
+                Console.WriteLine("-");
+            }
+        }
+    }
+}
